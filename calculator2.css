@@ -1,0 +1,94 @@
+body{
+    background-image: url("starwars1.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+#textbox {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 3px;
+    text-align: right;
+    width:320px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 40px;
+
+}
+
+#container {
+    border: 3px solid black;
+    width: 332px;
+    border-radius: 5px;
+    background-color: transparent;
+
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.btn:hover {
+    border: 2px solid white;
+
+#calculator {
+    width: 350px;
+    height: 500px;
+    border-radius: 8px;
+    border: 3px solid black;
+    position: relative;
+    padding-top: 8px;
+    background-color: #c6c6c6;
+    font-weight: bold;
+}
+
+#btn9, #btn6, #btn3, #btndot, #bbtn {
+    margin-left: 12px;
+}
+
+.txt {
+    margin-bottom: 20px;
+    width: 320px;
+    margin-left: 10px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 40px;
+}
+
+#btn9, #btn8, #btn7, #btn6, #btn5, #btn4, #btn3, #btn2, #btn1, #btn0, #btndot, #btneq, #btnp, #btnm, #btnms, #btnd, #bbtn, #btnb {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    border: 1px solid white;
+    font-size: 30px;
+}
+
+.btnc {
+    height: 70px;
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 100px;
+    margin-bottom: 10px;
+    width: 70px;
+}
+
+.btn:hover {
+    background-color: #46e672;
+}
+
+.btnc:hover {
+    background-color: #ec9472;
+    text-align: center;
+    font-weight: bold;
+}

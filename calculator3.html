@@ -1,0 +1,77 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="calculator2.css">
+	<title>Calculator</title>
+
+</head>
+<body>
+<div id="container">
+	<form Name="frm">
+
+			<input id="textbox" type="textbox" name="txt">
+			<br>
+			<input class="btn" id="" type="button" name='brl' value='(' onClick="frm.answer.value += '('">
+			<input class="btn" id="" type="button" name='brr' value=')' onClick="frm.answer.value += ')'">
+			<input class="btn" id="" type="button" value=' CE ' onClick="frm.answer.value += 'ce()'">
+			<input class="btn" id="" type="button" value=' AVG ' onClick="frm.answer.value += 'avg()'">
+			<br>
+
+			<input class="btn" type="button" name='btn9' value=" 9 " onClick="frm.answer.value += '9'">
+			<input class="btn" type="button" name='btn8' value=" 8 " onClick="frm.answer.value += '8'">
+			<input class="btn" type="button" name='btn7' value='7' onClick="frm.answer.value += '7'">
+			<input class="btn" type="button" name='btnd' value=' / ' onClick="frm.answer.value += ' / '">
+			<br>
+
+			<input class="btn" type="button" name='btn6' value='6' onClick="frm.answer.value += '6'">
+			<input class="btn" type="button" name='btn5' value='5' onClick="frm.answer.value += '5'">
+			<input class="btn" type="button" name='btn4' value='4' onClick="frm.answer.value += '4'">
+			<input class="btn" type="button" name='btnm' value=' * ' onClick="frm.answer.value += ' * '">
+			<br>
+
+			<input class="btn" type="button" name='btn3' value='3' onClick="frm.answer.value += '3'">
+			<input class="btn" type="button" name='btn2' value='2' onClick="frm.answer.value += '2'">
+			<input class="btn" type="button" name='btn1' value='1' onClick="frm.answer.value += '1'">
+			<input class="btn" type="button" name='btns' value=' - ' onClick="frm.answer.value += ' - '">
+			<br>
+
+			<input class="btn" type="button" name='btndot' value='.' onClick="frm.answer.value += '.'">
+			<input class="btn" type="button" name='btn0' value='0' onClick="frm.answer.value += '0'">
+			<input class="btn" type="button" name='btneq' value='=' onClick="frm.answer.value = eval(frm.answer.value)">
+			<input class="btn" type="button" name='btnp' value=' + ' onClick="frm.answer.value += '+'">
+			<br>
+
+	</form>
+</div>
+
+<script>
+ function cls() {
+ 	frm.txt.value='';
+ }
+
+function clsl() {
+	frm.txt.value=frm.txt.value.slice(0, frm.txt.value.length-1);
+}
+//average button
+
+function average(){
+	var ans = eval(calculator.answer.value);
+	var myString = calculator.answer.value;
+	var container = myString.split(' ');
+	var numberArray = [];
+
+	for (var i = 0; i < container.length; i++){
+		if (isNaN(container[1]) == false){
+			numberArray.push(container[i]);
+		}
+	}
+
+	var result = ans/numberArray.length;
+	calculator.answer.value = result;
+}
+
+	
+
+</script>
+</body>
+</html>
